@@ -4,13 +4,14 @@ import cls from './Button.module.scss';
 
 export enum ButtonTheme {
     CLEAR = 'clear',
+    CLEAR_INVERTED = 'clearInverted',
     OUTLINE = 'outline',
     BACKGROUND = 'background',
-    BACKGROUND_INVERTED = 'backgroundInverted'
+    BACKGROUND_INVERTED = 'backgroundInverted',
 }
 
 export enum ButtonSize {
-    M = 'sile_m',
+    M = 'size_m',
     L = 'size_l',
     XL = 'size_xl',
 }
@@ -34,7 +35,7 @@ export const Button: FC<ButtonProps> = (props) => {
 
     const mods: Record<string, boolean> = {
         [cls[theme]]: true,
-        [cls.square]: true,
+        [cls.square]: square,
         [cls[size]]: true,
     };
 
