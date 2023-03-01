@@ -18,7 +18,6 @@ import {
     getLoginLoading,
 } from '../../model/selectors/getLoginLoading/getLoginLoading';
 import { loginByUsername } from '../../model/services/loginByUsername/loginByUsername';
-import { getLoginState } from '../../model/selectors/getLoginState/getLoginState';
 import { loginActions, loginReducer } from '../../model/slice/loginSlice';
 import cls from './LoginForm.module.scss';
 
