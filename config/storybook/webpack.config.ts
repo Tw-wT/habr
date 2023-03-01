@@ -28,6 +28,10 @@ export default ({ config }: {config: webpack.Configuration}) => {
     });
     config.module.rules.push(buildCssLoader(true));
 
+    config.plugins.push(new webpack.DefinePlugin({
+        __IS_DEV__: true,
+    }));
+
     // eslint-disable-next-line no-param-reassign
 
     return config;
