@@ -1,3 +1,6 @@
 {
-  "ПРОФИЛЬ": "Profile"
+  "ПРОФИЛЬ": "Profile",
+  "Профиль пользователя": "User profile",
+  "Ваше имя": "You firstname",
+  "Ваша фамилия": "You lastname"
 }
